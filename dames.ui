@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dames</class>
+ <widget class="QMainWindow" name="Dames">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>761</width>
+    <height>733</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dames</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>50</width>
+    <height>50</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridBoard">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetFixedSize</enum>
+      </property>
+      <property name="spacing">
+       <number>0</number>
+      </property>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>761</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionNouvelle_partie"/>
+    <addaction name="actionSauvegarder_la_partie"/>
+    <addaction name="actionCharger_une_partie"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuA_propos">
+    <property name="title">
+     <string/>
+    </property>
+    <addaction name="action_propos_de_Qt"/>
+    <addaction name="action_propos_de_Dames"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuA_propos"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNouvelle_partie">
+   <property name="text">
+    <string>Nouvelle partie</string>
+   </property>
+   <property name="shortcut">
+    <string comment="Ctrl+N"/>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WidgetWithChildrenShortcut</enum>
+   </property>
+   <property name="priority">
+    <enum>QAction::HighPriority</enum>
+   </property>
+  </action>
+  <action name="actionSauvegarder_la_partie">
+   <property name="text">
+    <string>Sauvegarder la partie</string>
+   </property>
+  </action>
+  <action name="actionCharger_une_partie">
+   <property name="text">
+    <string>Charger une partie</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="action_propos_de_Qt">
+   <property name="text">
+    <string>&amp;À propos de Qt</string>
+   </property>
+  </action>
+  <action name="action_propos_de_Dames">
+   <property name="text">
+    <string>À &amp;propos de Dames</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

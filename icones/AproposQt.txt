@@ -1,0 +1,17 @@
+Ce programme utilise la version 5,11.3 de QE.
+Q is a C++ toolkit for cross-platform application development.
+Q provides single-source portability across all major desktop operating systems. It is also
+available for embedded Linux and ather embedded and mobile operating systems.
+valable under three different licensing options designed to accommodate the needs
+various users.
+Qt licensed under our commercial license agreement i appropriate for development of
+prophetary/commercial software where you do not want to share any source code with
+thiro parties or otherwise cannot comply with tie terms of the GNU LGPL version 3.
+Or licensed under the GNU LGPL version 3 is appropriate for the development of
+Q applications provided you can comply with the terms and conditions of the GNU LGPL
+version 3
+Please see  qt.io/lceraino  for an overview of Qu icensing
+Copynght (C) 2018 The Ot Company Lid and other contributors.
+Qt and the Ot logo are trademarks of The O1 Compary Lid.
+Qt is The Qt Company Lid product developed as an open source pro ect. See qt.io
+for more information.

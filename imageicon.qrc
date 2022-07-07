@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icones/crown_white.png</file>
+        <file>icones/crown_black.png</file>
+        <file>icones/Qt_Creator_Icon_Web.png</file>
+        <file>icones/gameover.jpg</file>
+        <file>icones/AproposQt.txt</file>
+    </qresource>
+</RCC>

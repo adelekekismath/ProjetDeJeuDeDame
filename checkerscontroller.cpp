@@ -82,7 +82,7 @@ QString checkersController::loadGame(QString fileName, QGridLayout * gridBoard )
             }
             file.close();
         }
-       return "Debut d'une nouvelle partie! Joueur actif :"+QString::number( (_checkersBoard.getPlayerturn() ==playertype::black)? 2 : 1 );
+       return "Debut d'une nouvelle partie! Joueur actif :"+ (_checkersBoard.getPlayerturn() ==playertype::black)? "Noir" : "Blanc" ;
  }
 
 
@@ -94,7 +94,7 @@ void checkersController::saveGame(QString fileName)
     file.open(QIODevice::WriteOnly | QIODevice::Truncate);
 
     QTextStream stream(&file);
-    stream << ((_checkersBoard.getPlayerturn() == playertype::black)? 2 :1) << Qt::endl;
+    stream << ((_checkersBoard.getPlayerturn() == playertype::black)? 2 :1) << endl;
     QString separator(" ");
     //Parcours des cases du damier
     for (int i = 0; i < 10; ++i)
@@ -122,7 +122,7 @@ void checkersController::saveGame(QString fileName)
 
             }
         }
-        stream << Qt::endl;
+        stream << endl;
     }
 
     stream.flush();
@@ -340,7 +340,7 @@ void checkersController::initializeCheckers(QGridLayout * gridBoard)
 
 // est appeler suite au clic d'une case
 QString checkersController::OnclickOnBoardSquare(square * selected_square)
-{   QString playerTurnMessage = "Joueur actif: "+QString::number( (_checkersBoard.getPlayerturn() ==playertype::black)? 2 : 1 );
+{   QString playerTurnMessage = "Joueur actif: "+ (_checkersBoard.getPlayerturn() ==playertype::black)? "Noir" : "Blanc" ;
     //Verifie s'il le jeu n'est pas terminé
     if(_checkersBoard.getGameStatus()== GameStatusType::CanKeepPlaying){
                 //Verifie si la case selectionner n'est pas active et que c'est le bon joueur qui à le tour qui joue
